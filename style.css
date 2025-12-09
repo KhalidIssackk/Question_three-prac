@@ -1,0 +1,39 @@
+.weather-app {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px;
+    background: #f6f6f6;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .weather-app {
+        padding: 10px;
+    }
+}
